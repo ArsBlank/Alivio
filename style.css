@@ -65,7 +65,7 @@ body {
   border-radius: var(--btn-radius);
   border: 1px solid var(--color-primary);
   background: var(--color-primary);
-  padding:13px 50px;
+  padding: 13px 50px;
 }
 
 /*header*/
@@ -273,8 +273,9 @@ line-height: 157%;
 .container__text{
 display: flex;
 flex-direction: column;
-justify-content: flex-end;
-align-items: center;
+justify-content: flex-start;
+align-items: flex-end;
+flex-direction: row;
 }
 
 .product__title { 
@@ -293,8 +294,6 @@ font-family: var(--font-main);
 font-style: normal;
 font-weight: 400;
 line-height: 157%; 
-
-
 }
 .btn_primary { 
 
