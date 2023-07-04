@@ -9,17 +9,25 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Alivio</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <header class="header">
       <div class="container header__container">
         <a href="/" class="header__logo">
           <img src="img/Logo.svg" alt="logo" />
         </a>
-        <nav class="header__nav">
-          <ul class="header__ul">
+        <nav class="header__nav"> 
+          <div id="burger"onclick="navToggle()">
+          <span class="material-icons icon-menu">menu</span> 
+          <span class="material-icons icon-close">close</span>
+        </div> 
+
+          <ul class="header__ul" id="headerMenu">
             <li class="header__li">
               <a href="/" class="header__a"></a>Why Alivio
             </li>
@@ -143,7 +151,7 @@
             <a href="/" class="btn_primary">Find Your Way</a>
           </div>
           <div class="product__container img">
-            <div class="img"><img src="img/slot4.png" alt="product" /></div>
+            <div class="product__img"><img src="img/slot4.png" alt="product" /></div>
           </div>
           </div>
         </div>

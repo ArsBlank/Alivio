@@ -1,0 +1,117 @@
+@media screen and (max-widht: 1400px) {
+  .story__container {
+    padding: 200px 0px;
+  }
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .welcome__img {
+    left: inherit;
+  }
+}
+@media screen and (max-widht: 1200px) {
+  .welcome__container {
+    flex-direction: column-reverse;
+  }
+  .welcome__img {
+    width: 100%;
+  }
+  .welcome__img,
+  .welcome__img img {
+    width: 100%;
+  }
+  .welcome__title,
+  .welcome__desc {
+    max-width: 80%;
+  }
+  .welcome {
+    margin-bottom: 200px;
+  }
+  .how-info {
+    gap: 30px;
+    flex-direction: column;
+  }
+  .how-step {
+    grid-template-columns: 1fr 1fr;
+  }
+  .how-step__img {
+    width: 100%;
+  }
+  .story__container {
+    flex-direction: column;
+    padding: 100px 20px;
+  }
+  .story__title {
+    margin-top: 0;
+  }
+  .story__img img {
+    width: 100%;
+  }
+  .product__container {
+    flex-direction: column-reverse;
+  }
+  .product__img img {
+    width: 100%;
+  }
+  .container__footer {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__logo {
+    gap: 100px;
+  }
+  .header__btn {
+    display: none;
+  }
+  .header__container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+  }
+  main {
+    padding-top: 70px;
+  }
+}
+@media screen and (max-widht: 922px) {
+  #burger {
+    display: inline-block;
+  }
+  .header__ul {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: var(--color-primary);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-120%);
+    transition: 0.2s all ease-in-out;
+  }
+  .header__ul._active {
+    transform: translateX(0);
+  }
+  .header__a {
+    font-size: 26px;
+    color: #fff;
+  }
+}
+@media screen and (max-widht: 576px) {
+  .how-step {
+    grid-template-columns: 1fr;
+  }
+}

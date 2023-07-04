@@ -1,3 +1,4 @@
+@import "media.css";
 *,
 *::before,
 *::after {
@@ -17,8 +18,9 @@ li {
 }
 html,
 body {
-  width: 1920px;;
-  height: 100%;
+  max-width: 1920px;;
+  height: 100%; 
+  overflow-x: hidden;
 }
 :root {
   /*fonts*/
@@ -45,7 +47,6 @@ body {
 .container {
   max-width: 1507px;
   width: 100%;
-  margin-inline: auto;
 }
 
 .btn {
@@ -143,22 +144,11 @@ body {
 .welcome_img {
   transform: translateX(206px);
 }
-.how {
-}
-.container {
-    
-}
-.how_container {
-}
 .how-info { 
     display: flex;
     align-items: center; 
     gap: 141px;
     margin-bottom: 81px;
-}
-.how-info__col {
-
-
 }
 .how-info__title {
   color: var( --color-text-four);
@@ -322,7 +312,7 @@ padding-right: 45px;
 .btn_primary { 
 
 }
-.img { 
+.product__img { 
   padding-top: 120px;
   padding-right: 86px;
   max-width: 638px;
@@ -362,3 +352,16 @@ padding-right: 271px;
 gap: 60px;
 display: flex;
 }
+#burger { 
+  display: none;
+}
+#burger.icon-close { 
+  display: none;
+}
+#burger._active .icon-menu {
+    display: none;
+  }
+#burger._active .icon-close {
+    display: inline-block;
+  }
+
